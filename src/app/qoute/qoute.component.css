@@ -1,0 +1,11 @@
+.container {
+    padding: 70px;
+  
+  }
+  .button:hover {
+    color:white;
+    opacity: 0.9;
+  }
+  .special-card{
+    opacity: 0.5;
+  }
