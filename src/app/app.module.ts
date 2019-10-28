@@ -21,7 +21,7 @@ import { DateCountPipe } from './date-count.pipe';
   imports: [
   
     BrowserModule,
-    FormsModule
+    FormsModule,
     
     
   
