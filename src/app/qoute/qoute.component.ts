@@ -7,7 +7,7 @@ import {Qoute} from '../qoute';
 })
 export class QouteComponent implements OnInit {
 
-  qoutes = [
+  qoutes:Qoute [] = [
     new Qoute(1, 'You cannot follow somebody you know you should lead', 'Chico', new Date('2019,8,8')),
     new Qoute(2, 'but who fights for you', 'r.h.Sin', new Date('2019,8,8')) ,
     new Qoute(3, 'Love is never wasted for its value does not rest in its reprocity',  'george', new Date('2019,8,10')),
@@ -18,8 +18,9 @@ export class QouteComponent implements OnInit {
    }
 
   addNewQoute(qoute) {
-    const qouteLength = this.qoutes.length;
-    qoute.id = qouteLength + 1;
+    let qouteLength = this.qoutes.length;
+    qoute.index = qouteLength + 1;
+    qoute.
     this.qoutes.push(qoute);
 
     }
