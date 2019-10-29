@@ -8,13 +8,13 @@ import {Qoute} from '../qoute';
 export class CountInputComponent implements OnInit {
   @Input()
   counterValue = 0;
-
+  
   increment() {
     this.counterValue++;
   }
-
+  countValue = 0;
   decrement() {
-    this.counterValue--;
+    this.countValue ++;
   }
 
 
