@@ -20,10 +20,9 @@ export class QouteComponent implements OnInit {
   addNewQoute(qoute) {
     let qouteLength = this.qoutes.length;
     qoute.index = qouteLength + 1;
-    qoute.
     this.qoutes.push(qoute);
+  }
 
-    }
   deleteQoute(isComplete, index) {
     if (isComplete) {
         const toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}`);
